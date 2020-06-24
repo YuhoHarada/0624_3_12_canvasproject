@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #202124;
+    background: #fff;
+    padding: 0 5%;
+}
+
+/* ************* fixed header? ************* */
+header{
+    position: fixed;
+    width: 90%;
+    bottom: 0;
+    background: #fff;
+    text-align: right;
+}
+
+header h1{
+    font-size: 1em;
+}
+
+header a{
+    text-decoration: none;
+    color: #202124;
+    font-weight: 400;
+}
+
+header a:hover{
+    color: #4a4a4a;
+}
+
+/* ************* First Section ************* */
+#hero{
+    height: 90vh;
+    background: url(../img/titel-bild.jpg) center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.8em;
+    position: relative;
+}
+
+#hero h1{
+    font-weight: 400;
+    word-spacing: 3px;
+}
+
+#hero h1 span{
+    font-weight: bold;
+}
+
+#hero img{
+    position: absolute;
+    top: 70vh;
+}
+
+/* ************* what canvas pj ************* */
+#w_cpj{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f7f7f7;
+    padding: 0 20%;
+}
+
+#w_cpj h2{
+    font-size: 2.3em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#w_cpj p{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+#w_cpj p span{
+    color: mediumturquoise;
+}
+
+/* ************* image ************* */
+#image{
+    background: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+#image img{
+    width: 49%;
+}
+
+/* ************* artist ************* */
+#artist{
+    background: #f7f7f7;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#artist img{
+    width: 45%;
+    margin: 10px 10px;
+}
+
+/* ************* end ************* */
+
+/* ************* footer ************* */
