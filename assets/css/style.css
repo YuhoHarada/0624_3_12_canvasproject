@@ -111,11 +111,64 @@ header a:hover{
     padding: 100px 0;
 }
 
+#artist h2{
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#artist p{
+    width: 50%;
+    margin: 0 auto 30px;
+}
+
 #artist img{
     width: 45%;
     margin: 10px 10px;
 }
 
-/* ************* end ************* */
-
 /* ************* footer ************* */
+footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 450px 100px;
+    grid-template-areas: 
+    "hl hl hl"
+    "logo text1 privacy";
+    text-align: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+footer h2{
+    grid-area: hl;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+footer div:nth-of-type(1){
+    grid-area: logo;
+}
+
+footer div img{
+    width: 100%;
+}
+
+footer div:nth-of-type(2){
+    grid-area: text1;
+    font-size: 0.9em;
+    padding: 0 80px;
+}
+
+footer div:nth-of-type(3){
+    grid-area: privacy;
+}
+
+footer div a{
+    color: #202124;
+    text-decoration: none;
+}
+
+footer div a:hover{
+    text-decoration: underline;
+}
